@@ -1,0 +1,12 @@
+{% extends 'clientbase.html' %} {% block main %}
+<h1>Details</h1>
+<h3>{{newsdetail.title}}</h3>
+<p style="color:blueviolet ;">{{newsdetail.content|safe}}</p>
+Category:{{newsdetail.category}}
+<br>
+<br>
+<a href="/news/update/{{newsdetail.id}}/">Update</a>
+<br>
+<a href="/news/delete/{{newsdetail.id}}/">Delete</a>
+
+{% endblock %}
